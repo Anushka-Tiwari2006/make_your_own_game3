@@ -152,15 +152,15 @@ function draw() {
     gameState = "end";
     }
 
-    //else if(score>=50){
-      //gameState="levelB"
-    //}
-
-  if(gameState ==="end"){
-      background("red") 
+    else if(score>=50){
+      gameState = "levelB"
     }
 
-  console .log(pc.x)  
+    if(gameState === "end"){
+      background("red")
+      }
+
+    
     
   drawSprites();
   fill("white")
@@ -169,7 +169,7 @@ function draw() {
         
   }
 
-  else if(gameState==="levelB"){
+  else if(gameState === "levelB"){
 
   ground .visible = false
   skull2.visible = false;
